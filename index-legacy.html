@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPI PREDICTOR</title>
+    <script type="text/javascript" src="script.js"> </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+
+    
+</head>
+<style>
+    body{
+        font-size:20px;
+    }
+    .btn{
+        width:40%;
+        font-size:20px;
+        padding:5px;
+
+        background-color: olivedrab;
+        border:none;
+        outline:none;
+        border-radius:10px;
+        color:white;
+    }
+</style>
+<body>
+    <center>
+        <h1 style="color:orangered">SPI Predictor model</h1>
+        <h2 style="color:blueviolet">Supervised Machine Learning Regression Based , Made by Om Ashish Soni</h2>
+    <form>
+
+    
+    <p><label>First Sessional Average marks : </label><input name="a" id="a" required /><span> / 36</span>
+    </p>
+    <p><label>Second Sessional Average marks : </label><input name="b" id="b" required /><span> / 36</span>
+    </p>
+    <p><label>Third Sessional Average marks : </label><input name="c" id="c" required /><span> / 36</span>
+    </p>
+    <button class="btn" onclick="predict(event)" type="submit">
+        Predict
+    </button>
+    </form>
+    <h1 id="output">
+
+    </h1>
+
+    
+</body>
+
+</html>

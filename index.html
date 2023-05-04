@@ -6,50 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPI PREDICTOR</title>
-    <script type="text/javascript" src="script.js"> </script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
-
+    <script type="text/javascript" src="script.js"></script>
     
-</head>
-<style>
-    body{
-        font-size:20px;
-    }
-    .btn{
-        width:40%;
-        font-size:20px;
-        padding:5px;
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-        background-color: olivedrab;
-        border:none;
-        outline:none;
-        border-radius:10px;
-        color:white;
-    }
-</style>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
 <body>
     <center>
-        <h1 style="color:orangered">SPI Predictor model</h1>
-        <h2 style="color:blueviolet">Supervised Machine Learning Regression Based , Made by Om Ashish Soni</h2>
-    <form>
-
-    
-    <p><label>First Sessional Average marks : </label><input name="a" id="a" required /><span> / 36</span>
-    </p>
-    <p><label>Second Sessional Average marks : </label><input name="b" id="b" required /><span> / 36</span>
-    </p>
-    <p><label>Third Sessional Average marks : </label><input name="c" id="c" required /><span> / 36</span>
-    </p>
-    <button class="btn" onclick="predict(event)" type="submit">
-        Predict
-    </button>
-    </form>
-    <h1 id="output">
-
-    </h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="">
+                <div class="card shadow-lg rounded-lg">
+                    <div class="card-header bg-success text-center">
+                        <h1 class="text-white">SPI Predictor Model</h1>
+                      </div>
+                      
+                    <div class="card-body">
+                        <h2 class="text-center mb-5">Supervised Machine Learning Regression Based, Made by Om Ashish Soni</h2>
+                        <br>
+                        <form>
+                            <div class="form-group">
+                                <label for="a">First Sessional Average marks:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="a" id="a" required>
+                                    <span class="input-group-text">/36</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="b">Second Sessional Average marks:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="b" id="b" required>
+                                    <span class="input-group-text">/36</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="c">Third Sessional Average marks:</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="c" id="c" required>
+                                    <span class="input-group-text">/36</span>
+                                </div>
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn btn-success btn-lg" onclick="predict(event)" type="submit">
+                                    Predict
+                                </button>
+                            </div>
+                        </form>
+                        <h1 id="output" class="text-center mt-5"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
 
     
 </body>
-
 </html>
