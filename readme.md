@@ -5,7 +5,7 @@
 
 * The dataset consists of 20 rows of input data, each with 3 features, and a corresponding SPI value.
 
-* The model architecture is based on ResNet18 model provided by torchvision.models. The model is trained using mean squared error loss and gradient descent optimization.
+* The model is trained using mean squared error loss and gradient descent optimization.
 
  ## Requirements
 The following libraries are required to run the code:
