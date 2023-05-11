@@ -1,7 +1,7 @@
 # SPI ( GPA ) Predictor
 
 ## Introduction
-* This project is a simple implementation of a neural network model using PyTorch library to predict SPI (Standardized Precipitation Index) values based on input precipitation data.
+* This project is a simple implementation of a linear regression model using PyTorch library to predict SPI (Standardized Precipitation Index) values based on input precipitation data.
 
 * The dataset consists of 20 rows of input data, each with 3 features, and a corresponding SPI value.
 
